@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Меню по центру экрана</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://frutonyanya.ru/upload/school_articles/preg_calendar/17_Fotolia_62647605_S.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 200vh; /* для проверки прокрутки */
+    }
+
+    .menu-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(4, 112, 235, 0.85);
+      padding: 4vh 4vw;
+      border-radius: 2vw;
+      box-shadow: 0 0 2vw rgba(0,0,0,0.3);
+      z-index: 999;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      list-style-type: none;
+      margin: 2vh 0;
+    }
+
+    .menu li a {
+      display: block;
+      width: 100%;
+      padding: 2vh 0;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 3.5vw;
+      font-weight: 600;
+      text-transform: uppercase;
+      background: #0bb2ff;
+      border-radius: 1vw;
+      transition: background 0.2s ease;
+    }
+
+    .menu li a:hover {
+      background: #42a9fd;
+    }
+
+    @media (min-width: 768px) {
+      .menu li a {
+        font-size: 1.5vw;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .menu-container {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <ul class="menu">
+      <li><a href="https://chickenbrik.github.io/born/">Менструальный цыкл</a></li>
+      <li><a href="https://chickenbrik.github.io/veneral/">Венералогические заболевание</a></li>
+      <li><a href="https://chickenbrik.github.io/contrasept/">Контрасепция</a></li>
+      <li><a href="https://chickenbrik.github.io/minstrual/">Беременость и аборты</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
